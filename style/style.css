@@ -9,45 +9,45 @@ body {
 }
 
 .flex-container {
-   display: flex;
-   gap: 1em;
-   margin-bottom: 1em;
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
 }
 
 .header {
     height: 100px;
-    background-color: #ffad737a;
+    background-color: #ffffff1a;
     margin-bottom: 1em;
     border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main {
-flex-basis: 100px;
-flex-grow: 1;
-border: 1px solid white;
-min-width: 50vw;
-
+    flex-basis: 100px;
+    flex-grow: 1;
+    border: 1px solid white;
+    min-width: 50vw;
 }
 
 .left {
-background-color: green;
-flex-basis: 200px;
-order: -1;
-border: 1px solid white;
-flex: calc();
+    background-color: #ffffff1a;
+    flex-basis: 200px;
+    order: -1;
+    border: 1px solid white;
 }
 
 .right {
-background-color: blue;
-flex-basis: 250px;
-border: 1px solid white;
+    background-color: #ffffff1a;
+    flex-basis: 250px;
+    border: 1px solid white;
 }
 
 .footer {
     height: 100px;
-    background-color: yellow;
+    background-color: #ffffff1a;
     border: 1px solid white;
-    
 }
 
 .cards-container {
@@ -61,7 +61,7 @@ border: 1px solid white;
     flex-basis: 335px;
     flex-grow: 1;
     max-height: 350px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff1a;
     transition: 0.5s;
     cursor: pointer;
     border-radius: 14px;
@@ -69,12 +69,10 @@ border: 1px solid white;
 }
 
 .card:hover {
-    background: rgba(255, 255, 255, 0.17);
-    box-shadow: 4px 14px 32px rgba(190, 126, 255, 0.44);
+    background: #ffffff2b;
+    box-shadow: 4px 14px 32px #be7eff70;
     transform: scale(1.05);
 }
-
-
 
 img {
     max-width: 100%;
@@ -85,7 +83,7 @@ img {
 }
 
 .description {
-    border: 0.1rem solid rgb(240, 221, 255);
+    border: 0.1rem solid #f0ddff;
     border-radius: 2rem;
     padding: 0.3em;
     box-shadow:
@@ -121,17 +119,29 @@ img {
 .link-style {
     border-radius: 2rem;
     padding: 0.3em;
-    box-shadow:
-        0 0 2rem #bc13fe,
-        0 0 0.8rem #bc13fe,
-        inset 0 0 1.3rem #6d0b94;
     color: #fff;
     width: 15vw;
     transition: 0.25s;
     text-decoration: none;
     padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.5em;
 }
 
 .link-style:hover {
-    background-color: #6d0b94;
+    box-shadow:
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        inset 0 0 1.3rem #6d0b94;
+}
+
+.icons {
+    text-align: right;
+    padding: 30px;
+    letter-spacing: 30px;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 40px;
 }

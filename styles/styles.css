@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(14, 0, 25);
+    background-image: url(../images/back.jpg);
+    font-family: Ubuntu, Arial;
+}
+
+.container {
+    font-size: 0;
+}
+
+.card {
+    font-size: 1rem;
+    display: inline-block;
+    width: calc(33.33% - 32px);
+    height: calc(70vh - 100px);
+    margin: 1em;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 14px;
+    padding-top: 20px;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 4px 14px 32px rgba(190, 126, 255, 0.44);
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: 60%;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto;
+}
+
+.description {
+    border: 0.1rem solid rgb(240, 221, 255);
+    border-radius: 2rem;
+    padding: 0.3em;
+    box-shadow:
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe;
+    color: #fff;
+    width: 15vw;
+    margin: 20px auto;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.description:hover {
+    background-color: #a30fddbf;
+}
+
+.price {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+        0 0 5px #1fff,
+        0 0 10px #1fff,
+        0 0 20px #1fff,
+        0 0 40px #55ff,
+        0 0 80px #55ff,
+        0 0 90px #55ff,
+        0 0 100px #55ff;
+}
+
+.link-style {
+    border-radius: 2rem;
+    padding: 0.3em;
+    box-shadow:
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        inset 0 0 1.3rem #6d0b94;
+    color: #fff;
+    width: 15vw;
+    transition: 0.25s;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.link-style:hover {
+    background-color: #6d0b94;
+}
+
+.link-pos {
+    margin: 55px auto;
+    display: block;
+    text-align: center;
+}
+
+.float {
+    font-size: 1rem;
+    float: left;
+    margin: 1em;
+    width: calc(33.33% - 32px);
+    height: calc(70vh - 100px);
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 14px;
+    padding-top: 20px;
+}
+
+.float:hover {
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 4px 14px 32px rgba(190, 126, 255, 0.44);
+    transform: scale(1.05);
+}
